@@ -200,33 +200,6 @@ a:hover {
   }
 }
 
-/*------/ Socials /------*/
-.socials {
-  padding: 1.5rem 0;
-}
-
-.socials ul li {
-  display: inline-block;
-}
-
-.socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
-  border-radius: 50%;
-  line-height: 1.4;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
-  transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-  background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
-}
-
 /*------/ Ul resect /------*/
 .ul-resect, .socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
   list-style: none;
@@ -1373,4 +1346,20 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+
+/**************************************************************
+# Mine
+**************************************/
+.data-title {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+
+#aboutPageProfileImg {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
