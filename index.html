@@ -773,44 +773,51 @@
 
   <script>
 
-    var categoryBtnIdToSkillsIds = {
-      "allCatBtn": null,
-      "langCatBtn": ["pythonSkill", "cssSkill", "htmlSkill"],
-      "frameworkCatBtn": ["djangoSkill"],
-      "softwareCatBtn": ["vmwareSkill"],
-      "devCatBtn":  ["agileSkill", "cicdSkill"]
-    };
-    var allSkills = document.getElementsByClassName("skill");
-    var allSkillsIds = [];
-    for (let skillElement of allSkills) {
-      allSkillsIds.push(skillElement.id);
-    }
-    categoryBtnIdToSkillsIds["allCatBtn"] = allSkillsIds;
+    // var categoryBtnIdToSkillsIds = {
+    //   "allCatBtn": null,
+    //   "langCatBtn": ["pythonSkill", "cssSkill", "htmlSkill"],
+    //   "frameworkCatBtn": ["djangoSkill"],
+    //   "softwareCatBtn": ["vmwareSkill"],
+    //   "devCatBtn":  ["agileSkill", "cicdSkill"]
+    // };
+    // var allSkills = document.getElementsByClassName("skill");
+    // var allSkillsIds = [];
+    // for (let skillElement of allSkills) {
+    //   allSkillsIds.push(skillElement.id);
+    // }
+    // categoryBtnIdToSkillsIds["allCatBtn"] = allSkillsIds;
 
-    displaySkills = function(categoryBtnClickedId) {
+    // displaySkills = function(categoryBtnClickedId) {
 
-      // Hide all skills first
-      var allSkills = document.getElementsByClassName("skill");
-      for (let skillElement of allSkills) {
-        skillElement.style.display = 'none';
-      }
+    //   // Hide all skills first
+    //   var allSkills = document.getElementsByClassName("skill");
+    //   for (let skillElement of allSkills) {
+    //     skillElement.style.display = 'none';
+    //   }
 
-      // then display only those skills that are related to the category button clicked
-      var skillsIds = categoryBtnIdToSkillsIds[categoryBtnClickedId];
+    //   // then display only those skills that are related to the category button clicked
+    //   var skillsIds = categoryBtnIdToSkillsIds[categoryBtnClickedId];
 
-      // skillsIds.foreach(function(skillId) {
-      //   console.log(skillId);
-      //   document.getElementById(skillId).style.display = 'block';
-      // });
+    //   // skillsIds.foreach(function(skillId) {
+    //   //   console.log(skillId);
+    //   //   document.getElementById(skillId).style.display = 'block';
+    //   // });
 
-      for (let skillId of skillsIds) {
-        var skillElement = document.getElementById(skillId);
-        if (skillElement) {
-          skillElement.style.display = 'block';
-        }
-      }
-    }
+    //   for (let skillId of skillsIds) {
+    //     var skillElement = document.getElementById(skillId);
+    //     if (skillElement) {
+    //       skillElement.style.display = 'block';
+    //     }
+    //   }
+    // }
 
+    // BEGIN NEW SCRIPT 
+
+    var skillsData = []; 
+    $.getJSON("assets/skills-data.json", function(data) { 
+      skillsData = data; 
+      console.log(skillsData); 
+    }); 
 
   </script>
 
