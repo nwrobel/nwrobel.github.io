@@ -35,7 +35,10 @@
   <!-- ======= Header/ Navbar ======= -->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">nwrobel.com</a>
+      <div class="navbar-brand">
+        <img id="brandImg" src="assets/img/nick-brand-thumb.jpg" class="img-responsive rounded b-shadow-a">
+        <a class="js-scroll" href="#page-top" style="color: bisque;">NixCoreBits Tech</a>
+      </div>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -55,9 +58,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#experience">Experience</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#skills">Skills</a>
-          </li>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#projects">Projects</a>
           </li>
@@ -81,7 +84,7 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <p class="display-6 color-d">Official Website Of</p>
+          <p class="display-table intro-pretitle">Official Website Of</p>
           <h1 class="intro-title mb-4">Nick Wrobel</h1>
           <p class="intro-subtitle"><span class="text-slider-items">Full Stack Developer,DevOps Engineer,Systems Administrator,IT Support Specialist</span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
@@ -99,12 +102,11 @@
           <div class="col-sm-12">
             <div class="box-shadow-full">
               <div class="row">
-
                 <div class="col-sm-12">
-                  <div class="title-box text-center">
-                    <h5 class="title-a">
-                      About me
-                    </h5>
+                  <div class="section-title-box text-center">
+                    <div class="section-title">
+                      About Me
+                    </div>
                     <div class="line-mf"></div>
                   </div>
                 </div>
@@ -113,7 +115,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <img id="aboutPageProfileImg" src="assets/img/nick-profile-img.jpg" class="img-responsive rounded b-shadow-a">
-                  <div class="lead">
+                  <div>
                     Computers are capable of amazing power that can be leveraged to move society forward. 
                     I'm a passionate engineer with a vision of harnessing such power to not only improve productivity, but also create new excitement for the world! 
                     <br><br>
@@ -123,7 +125,8 @@
                     <br><br>
   
                     Because my experience spans several different niches in IT, I can help your team craft the best-fitting solution by examining the problem through multiple aspects of computing. 
-                    This results in a product that is most accurate, secure, maintainable, scaleable, and easy to use without unwittingly lacking in any of these areas.
+                    Diversification of experience on a team is essential because it ensures the product it is seen by a variety of technical perspectives. 
+                    This results in a product that is most accurate, secure, maintainable, scaleable, and easy to use and importantly, one that does not fall short in any of these areas.
                     <br><br>
   
                     My work style involves mixing new research and my prior technical knowledge with a novelty-centric sense of creativity. I regard usability as the guiding principle of my work, with necessity being the cataylst. 
@@ -145,13 +148,10 @@
               
               <div class="row">
                 <div class="col-sm-12">
-                  <div class="title-box text-center">
-                    <h5 class="title-a">
+                  <div class="section-title-box text-center">
+                    <div class="section-title">
                       Education
-                    </h5>
-                    <p class="subtitle-a">
-                      I have the following education and training.
-                    </p>
+                    </div>
                     <div class="line-mf"></div>
                   </div>
                 </div>
@@ -211,25 +211,23 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="box-shadow-full">
-              
               <div class="row">
                 <div class="col-sm-12">
-                  <div class="title-box text-center">
-                    <h5 class="title-a">
+                  <div class="section-title-box text-center">
+                    <div class="section-title">
                       Experience
-                    </h5>
-                    <p class="subtitle-a">
-                      I have 9+ years of experience with Software Development, dating back to 2011 when I attended my first programming class in high school.
-                      From this point on, I have either remained busy doing some development project: as a school/college assignemtn, part of an internship or full time job, or as a personal hobby project.
-                      Not counting my school assignments, I have 5+ years of experience. Since I have worked on both front-end and back-end web service projects, I am a Full Stack Developer. 
+                    </div>
+                    <p class="subsection-title">
+                      I have 9+ years of experience in Software Development, which dates back to 2011 when I attended my first programming class in high school.
+                      Since then, I have remained engaged with some kind of development project: a school/college assignment for example, a personal hobby project, or a large project during an internship or full-time position.
+                      I have 5+ years of industry experience helping teams engineer these larger projects. I've have worked on both front-end and back-end web service applications, so I consider myself am a Full Stack Developer. 
                       <br><br>
 
                       Software Development is my favorite area of computing and I have the most experince with it. 
-                      However, I have also worked in the realms of DevOps Engineering, Systems Administration, and IT Support.
+                      However, I have also worked within the realms of DevOps Engineering, Systems Administration, and IT Support.
                       <br><br>
                       
-                      The following is a list of my past work experiences with: job title, company name, dates worked,
-                      and description about my accomplishments while working there.
+                      The following is a list of my relevant experiences in the IT industry thus far.   
                     </p>
                     <div class="line-mf"></div>
                   </div>
@@ -240,25 +238,29 @@
                 <div class="col-md-2">
                   <img src="assets/img/atlas-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
-
+                
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
+
+                  <!-- job Title, dates worked -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobTitle">
                       Microsoft Systems Engineer
+                    </div>
+
+                    <div class="col-md-5 expPageJobDates">
+                      April 2019-March 2020
+                    </div>
                   </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- Company, location -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
-                      Apex Systems, Atlas Technologies
+                    <div class="col-md-7 expPageJobCompany">
+                      Atlas Technologies 
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
+                    <div class="col-md-5 expPageJobLocation">
                       Charleston, SC
-                    </div>
-
-                    <div class="col-md-4 expPageJobDates">
-                      April 2019-March 2020
                     </div>
                   </div> 
                   
@@ -281,13 +283,11 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      Powershell, VMWare ESXi, Pester, Python, Selenium, AutoHotkey, JMeter, Active Directory, Windows Administrative Tools
-                    </div>
+                  <div class="row data-title">
+                    Technologies Used
+                  </div>
+                  <div class="row expPageTechUsed">
+                    Powershell, VMWare ESXi, Pester, Python, Selenium, AutoHotkey, JMeter, Active Directory, Windows Administrative Tools
                   </div>
                 </div>
               </div>
@@ -297,32 +297,37 @@
                   <img src="assets/img/blackbaud-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
 
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
-                    Site Reliability Engineer
-                  </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- job Title, dates worked -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
-                      Blackbaud Inc.
+                    <div class="col-md-7 expPageJobTitle">
+                      Site Reliability Engineer
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
-                      Charleston, SC
-                    </div>
-
-                    <div class="col-md-4 expPageJobDates">
+                    <div class="col-md-5 expPageJobDates">
                       November 2017-January 2019
                     </div>
+                  </div>
+
+                  <!-- Company, location -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobCompany">
+                      Blackbaud Inc. 
+                    </div>
+
+                    <div class="col-md-5 expPageJobLocation">
+                      Charleston, SC
+                    </div>
                   </div> 
-                  
+                
                   <!-- Accomplishments bullet points -->
                   <div class="row">
                     <ul>
                       <li>
-                        Assisted in migrating one of Blackbaud's flagship fundraising software solutions from legacy, physical datacenters into Microsoft Azure's cloud environment.                      </li>
+                        Assisted in migrating one of Blackbaud's flagship fundraising software solutions from legacy, physical datacenters into Microsoft Azure's cloud environment.
+                      </li>
                       <li>
                         Handled patch deployments, software updates, and other routine operational work independently as tasks distributed to the team.
                       </li>
@@ -333,12 +338,11 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      Powershell, Microsoft Azure (including Portal, Storage Explorer, Resources, and APIs), SQL Server Management Studio, Active Directory, Citrix, Windows Administrative Tools, Unit testing with Pester                    </div>
+                  <div class="row data-title">
+                    Technologies Used
+                  </div>
+                  <div class="row expPageTechUsed">
+                    Powershell, Microsoft Azure (including Portal, Storage Explorer, Resources, and APIs), SQL Server Management Studio, Active Directory, Citrix, Windows Administrative Tools, Unit testing with Pester                    
                   </div>
                 </div>
               </div>
@@ -348,27 +352,31 @@
                   <img src="assets/img/gravity-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
 
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
-                    Full Stack Developer, Co-founder
+                  
+                  <!-- job Title, dates worked -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobTitle">
+                      Full Stack Developer, Co-founder
+                    </div>
+
+                    <div class="col-md-5 expPageJobDates">
+                      March 2015-January 2017
+                    </div>
                   </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- Company, location -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
+                    <div class="col-md-7 expPageJobCompany">
                       Gravity Inc.
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
+                    <div class="col-md-5 expPageJobLocation">
                       Columbia, SC
                     </div>
-
-                    <div class="col-md-4 expPageJobDates">
-                      March 2015-January 2017
-                    </div>
                   </div> 
-                  
+
                   <!-- Accomplishments bullet points -->
                   <div class="row">
                     <ul>
@@ -382,13 +390,11 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      Python, Django, MySQL, Nginx/Apache, Ubuntu, Eclipse, Git, Google APIs, Amazon Web Services, JMeter                    
-                    </div>
+                  <div class="row data-title">
+                    Technologies Used
+                  </div>
+                  <div class="row expPageTechUsed">
+                    Python, Django, MySQL, Nginx/Apache, Ubuntu, Eclipse, Git, Google APIs, Amazon Web Services, JMeter                    
                   </div>
                 </div>
               </div>
@@ -398,27 +404,31 @@
                   <img src="assets/img/avtec-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
 
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
-                    Software Development Intern
+  
+                  <!-- job Title, dates worked -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobTitle">
+                      Software Development Intern
+                    </div>
+
+                    <div class="col-md-5 expPageJobDates">
+                      May-August 2016
+                    </div>
                   </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- Company, location -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
+                    <div class="col-md-7 expPageJobCompany">
                       Avtec Inc.
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
+                    <div class="col-md-5 expPageJobLocation">
                       Lexington, SC
                     </div>
-
-                    <div class="col-md-4 expPageJobDates">
-                      May-August 2016
-                    </div>
                   </div> 
-                  
+                
                   <!-- Accomplishments bullet points -->
                   <div class="row">
                     <ul>
@@ -432,13 +442,11 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      C#, ASP.NET, LINQ, SQL, HTML, JavaScript, CSS, Visual Studio, VMWare                    
-                    </div>
+                  <div class="row data-title">
+                    Technologies Used
+                  </div>
+                  <div class="row expPageTechUsed">
+                    Python, Django, MySQL, Nginx/Apache, Ubuntu, Eclipse, Git, Google APIs, Amazon Web Services, JMeter                    
                   </div>
                 </div>
               </div>
@@ -448,27 +456,31 @@
                   <img src="assets/img/syseda-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
 
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
-                    Software Engineering Intern
+
+                  <!-- job Title, dates worked -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobTitle">
+                      Software Engineering Intern
+                    </div>
+
+                    <div class="col-md-5 expPageJobDates">
+                      January-August 2015
+                    </div>
                   </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- Company, location -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
+                    <div class="col-md-7 expPageJobCompany">
                       SysEDA, University of South Carolina
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
+                    <div class="col-md-5 expPageJobLocation">
                       Columbia, SC
                     </div>
-
-                    <div class="col-md-4 expPageJobDates">
-                      January-August 2015
-                    </div>
                   </div> 
-                  
+              
                   <!-- Accomplishments bullet points -->
                   <div class="row">
                     <ul>
@@ -482,13 +494,11 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      C#, ASP.NET, HTML, JavaScript, Knockout, Three.js, Unity, CSS, Kendo UI, Bootstrap, Visual Studio, SQL Server, Team Foundation Server (TFS)                    
-                    </div>
+                  <div class="row data-title">
+                    Technologies Used
+                  </div>
+                  <div class="row expPageTechUsed">
+                    C#, ASP.NET, HTML, JavaScript, Knockout, Three.js, Unity, CSS, Kendo UI, Bootstrap, Visual Studio, SQL Server, Team Foundation Server (TFS)                    
                   </div>
                 </div>
               </div>
@@ -498,27 +508,31 @@
                   <img src="assets/img/scdhhs-thumb.png" class="img-fluid rounded b-shadow-a" alt="">
                 </div>
 
+                <!-- Job info contents -->
                 <div class="col-md-10">
-                  <!-- job Title -->
-                  <div class="row expPageJobTitle">
-                    IT Service Desk Assistant 
+
+                  <!-- job Title, dates worked -->
+                  <div class="row">
+                    <div class="col-md-7 expPageJobTitle">
+                      IT Service Desk Assistant
+                    </div>
+
+                    <div class="col-md-5 expPageJobDates">
+                      May-August 2014
+                    </div>
                   </div>
 
-                  <!-- Company, location, dates worked -->
+                  <!-- Company, location -->
                   <div class="row">
-                    <div class="col-md-5 expPageJobCompany">
+                    <div class="col-md-7 expPageJobCompany">
                       South Carolina Department of Health and Human Services
                     </div>
 
-                    <div class="col-md-3 expPageJobLocation">
+                    <div class="col-md-5 expPageJobLocation">
                       Columbia, SC
                     </div>
-
-                    <div class="col-md-4 expPageJobDates">
-                      May-August 2014
-                    </div>
                   </div> 
-                  
+
                   <!-- Accomplishments bullet points -->
                   <div class="row">
                     <ul>
@@ -532,17 +546,15 @@
                   </div> 
 
                   <!-- Technologies used -->
-                  <div class="row">
-                    <div class="data-title">
-                      Technologies Used
-                    </div>
-                    <div>
-                      RSA, Grouplink, Active Directory, Windows OS
-                    </div>
+                  <div class="row data-title">
+                    Technologies Used
                   </div>
+                  <div class="row expPageTechUsed">
+                    RSA, Grouplink, Active Directory, Windows OS
+                  </div>
+
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -558,11 +570,11 @@
               
               <div class="row">
                 <div class="col-sm-12">
-                  <div class="title-box text-center">
-                    <h5 class="title-a">
+                  <div class="section-title-box text-center">
+                    <div class="section-title">
                       Skills
-                    </h5>
-                    <p class="subtitle-a">
+                    </div>
+                    <p class="subsection-title">
                       Here is a breakdown of the my skills: the technologies, languages, concepts, etc. I have learned and used during my time working in the Software Development field.
                       Each skill is qualified with the duration of experience I have working with it. 
                       Because I've had 7+ years of expereince in this field, 8 years is the maximum duration of my knowledge for any skill. 
@@ -657,11 +669,11 @@
             <div class="box-shadow-full">
               <div class="row">
                 <div class="col-sm-12">
-                  <div class="title-box text-center">
-                    <h5 class="title-a">
+                  <div class="section-title-box text-center">
+                    <div class="section-title">
                       Contact & More Info
-                    </h5>
-                    <p class="subtitle-a text-left" >
+                    </div>
+                    <p class="subsection-title text-left" >
                       Please feel free to reach out to me using my contact info below if you'd like to know more
                       about me, my professional background, and/or my projects. Suggestions
                       about this website and my other projects are always welcome.
@@ -699,12 +711,12 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-sm-2 data-title">
-                    <a href="http://www.linkedin.com/in/nicholas-wrobel">LinkedIn</a>
+                  <div class="col-sm-2">
+                    <a class="hyperlink data-title" href="http://www.linkedin.com/in/nicholas-wrobel">LinkedIn</a>
                   </div>
                   <div> | </div>
-                  <div class="col-sm-2 data-title">
-                    <a href="https://github.com/nwrobel">Github</a>
+                  <div class="col-sm-2">
+                    <a class="hyperlink data-title" href="https://github.com/nwrobel">Github</a>
                   </div>
                 </div>
                 </div>
@@ -725,11 +737,6 @@
       </div>
     </section><!-- End Contact Section -->
 
-    
-    <div class="container" style="color:red; text-align:center; font-weight:700; font-size: 2em">
-      This website is under construction: work in progress! Stay tuned for future updates and improvments.
-    </div>
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -737,7 +744,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="copyright-box">
+          <div class="copyright-box" style="font-size: 60%;">
             <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
             <div class="credits">
               <!--

@@ -1,189 +1,9 @@
 /**
-* Template Name: DevFolio - v2.3.0
+* The Orignal CSS was taken and modifed from:
 * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-  background-color: #1f1f1f;
-  color: #afafaf;
-  font-family: 'Roboto Mono', monospace;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #ccca53;
-}
-
-a {
-  color: #7f4f96;
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover {
-  color: #0078ff;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.p-r {
-  position: relative;
-}
-
-.box-shadow, .paralax-mf, .service-box, .work-box, .card-blog {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a, .button:hover {
-  box-shadow: 0 0 0 4px #cde1f8;
-}
-
-.display-5 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.display-6 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
-}
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-@media (max-width: 1024px) {
-  .bg-image {
-    background-attachment: scroll;
-  }
-}
-
-.overlay-mf {
-  background-color: #5eff00;
-}
-
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .7;
-}
-
-.paralax-mf {
-  position: relative;
-  padding: 8rem 0;
-}
-
-.display-table {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/*--/ Sections /--*/
-.sect-4 {
-  padding: 4rem 0;
-}
-
-.sect-pt4 {
-  padding-top: 4rem;
-}
-
-.sect-mt4 {
-  margin-top: 4rem;
-}
-
-/*--/ Title s /--*/
-.title-s {
-  font-weight: 600;
-  color: #1e1e1e;
-  font-size: 1.1rem;
-}
-
-/*--/ Title A /--*/
-.title-box {
-  margin-bottom: 3%;
-}
-
-.title-a {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.subtitle-a {
-  color: #4e4e4e;
-}
-
-.line-mf {
-  width: 40px;
-  height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
-}
-
-/*--/ Title Left /--*/
-
-.title-left {
-  font-size: 2rem;
-  position: relative;
-}
-
-.title-left:before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #0078ff;
-  width: 100px;
-  bottom: -12px;
-}
-
-
-
-/*------/ Ul resect /------*/
-.ul-resect, .socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.list-ico {
-  line-height: 2;
-}
-
-.list-ico span {
-  color: #0078ff;
-  margin-right: 10px;
-}
-
 
 /*------/ Back to top button /------*/
 .back-to-top {
@@ -391,13 +211,13 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #141414;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #7700ff;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -420,13 +240,12 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: #682424;
 }
 
 .navbar-b .navbar-brand {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 100%;
+  font-weight: 400;
 }
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
@@ -593,104 +412,17 @@ a:hover {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about-mf .box-shadow-full {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-@media (min-width: 767px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
-}
-
-.skill-mf span {
-  color: #4e4e4e;
-}
-
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #0078ff;
-}
-
-/*------/ Sidebar /------*/
-.widget-sidebar .sidebar-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-left: 5px solid #0078ff;
-  padding-left: 15px;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-.widget-sidebar .list-sidebar li {
-  position: relative;
-  padding: 6px 0 6px 24px;
-}
-
-.widget-sidebar .list-sidebar li:before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 1px;
-  left: 0;
-  background-color: #0078ff;
-  top: 20px;
-}
-
-.sidebar-search input {
-  background-color: #fff;
-  border-radius: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
-  border-radius: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.widget-tags ul li {
-  display: inline-block;
-  background-color: #0078ff;
-  padding: .2rem .6rem;
-  margin-bottom: .5rem;
-  border-radius: 15px;
-}
-
-.widget-tags ul li a {
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
   text-align: center;
-  color: #fff;
-  padding: 25px 0;
-  background: #0062d3;
+  color: #3a3a3a;
+  padding: 10px 0;
+  background: #1f1f1f;
 }
 
 footer .copyright {
@@ -702,7 +434,7 @@ footer .credits {
 }
 
 footer .credits a {
-  color: #fff;
+  color: #3a3a3a;
 }
 
 
@@ -713,17 +445,40 @@ footer .credits a {
 https://stackoverflow.com/questions/24709915/blur-the-edges-of-an-image-or-background-image-with-css
 https://www.cssmatic.com/box-shadow
 */
-.data-title {
-  font-weight: 600;
-  color: #cc900e;
-  font-size: 1.1rem;
+
+/*********************** Homepage *********************/
+
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
 }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.intro-pretitle {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+#brandImg {
+  width: 9%;
+  height: auto;
+}
+
+/*********************** About Page *********************/
 
 #aboutPageProfileImg {
   float: left;
   margin-right: 1em;
   margin-bottom: 1em;
 }
+
+/*********************** Education page *********************/
 
 .eduPageImg {
   width: 50%;
@@ -732,39 +487,119 @@ https://www.cssmatic.com/box-shadow
   display: block;
 }
 
+/*********************** Experience page *********************/
+
 .expPageJobTitle {
-  font-size: 170%;
+  font-size: 165%;
   font-weight: 500;
-}
-
-.expPageJobCompany {
-  font-size: 130%;
-  font-weight: 400;
-  font: italic;
-}
-
-.expPageJobLocation {
-  font-size: 120%;
-  font-weight: 300;
+  color: #7a5a8a;
 }
 
 .expPageJobDates {
-  font-size: 120%;
+  font-size: 110%;
   font-weight: 300;
+  text-align: right;
+  align-self: center;
 }
 
-/*------/ Box /------*/
+.expPageJobCompany {
+  font-size: 125%;
+  font-weight: 400;
+  font-style: italic;
+  color: #f8a960;
+}
+
+.expPageJobLocation {
+  font-size: 110%;
+  font-weight: 300;
+  text-align: right;
+}
+
+.expPageTechUsed {
+  margin-bottom: 3%;
+}
+
+/***************** General *******************/
+.data-title {
+  font-weight: 600;
+  color: #f8c860;
+  font-size: 105%;
+}
+
 .box-shadow-full {
-  padding: 3% 1.25%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
   position: relative;
   background-color: #1f1f1f;
   margin-bottom: 3%;
   z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(250, 183, 0, 0.438);
+  /*box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 #bccccb;*/
+  box-shadow: 10px 10px 11px 0px rgba(188,204,203,1)
 }
 
 @media (min-width: 768px) {
   .box-shadow-full {
-    padding: 3rem;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
+
+.section-title-box {
+  margin-bottom: 3%;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0eccc3;
+}
+
+.subsection-title {
+  font-size: 90%;
+  text-align: left;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #afafaf;
+  font-family: "Lucida Console", monospace;
+}
+
+a:hover {
+  color: #4a96ec;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
+.sect-pt4 {
+  padding-top: 4rem;
+}
+
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+.hyperlink {
+  color: #0078ff;
+}
+
