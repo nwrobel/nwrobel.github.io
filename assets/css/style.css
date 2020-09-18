@@ -1363,3 +1363,10 @@ footer .credits a {
   margin-right: 1em;
   margin-bottom: 1em;
 }
+
+.eduPageImg {
+  width: 50%;
+  height: auto;
+  float: right;
+  display: block;
+}
