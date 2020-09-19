@@ -35,45 +35,51 @@
   <!-- ======= Header/ Navbar ======= -->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <div class="navbar-brand">
-        <img id="brandImg" src="assets/img/nick-brand-thumb.jpg" class="img-responsive rounded b-shadow-a">
-        <a class="js-scroll" href="#page-top" style="color: bisque;">NixCoreBits Tech</a>
-      </div>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#experience">Experience</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="#skills">Skills</a>
-          </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Tech Blog</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link js-scroll" href="#services">Services</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact & More</a>
-          </li>
-        </ul>
+      <div class="row">
+
+        <div class="navbar-brand col-md-4">
+          <img id="brandImg" src="assets/img/nick-brand-thumb.jpg" class="img-responsive rounded b-shadow-a">
+          <span>NixCoreBits</span>
+        </div>
+
+        <div class="col-md-8">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#skills">Skills</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link js-scroll" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#blog">Tech Blog</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link js-scroll" href="#services">Services</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="#contact">Contact & More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -561,13 +567,11 @@
       </div>
     </section><!-- End Experience Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <!-- <section id="skills" class="about-mf sect-pt4 route bg-image" style="background-image: url(assets/img/experience-bg.jpg)">
+    <section id="skills" class="about-mf sect-pt4 route bg-image" style="background-image: url(assets/img/experience-bg.jpg)">
       <div class="container" >
         <div class="row">
           <div class="col-sm-12">
             <div class="box-shadow-full">
-              
               <div class="row">
                 <div class="col-sm-12">
                   <div class="section-title-box text-center">
@@ -585,72 +589,23 @@
               </div>
 
               <!-- Categories buttons bar -->
-              <!-- <div class="row">
+              <div class="row">
                 <div class="col-md-12">
                   <div class="button-group filter-button-group text-center">
-                    <button id="allCatBtn" onclick="displaySkills(this.id)">All Skills</button>
-                    <button id="langCatBtn" onclick="displaySkills(this.id)">Languages</button>
-                    <button id="frameworkCatBtn" onclick="displaySkills(this.id)">Frameworks/Libraries</button>
-                    <button id="softwareCatBtn" onclick="displaySkills(this.id)">Software</button>
-                    <button id="devCatBtn" onclick="displaySkills(this.id)">Development Practices</button>
+                    <button id="all" onclick="displaySkills(this.id)">All Skills</button>
+                    <button id="lang" onclick="displaySkills(this.id)">Languages</button>
+                    <button id="framework" onclick="displaySkills(this.id)">Frameworks/Libraries</button>
+                    <button id="software" onclick="displaySkills(this.id)">Software</button>
+                    <button id="dev" onclick="displaySkills(this.id)">Development Practices</button>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
                 <!-- Skills and duration display area -->
-                <!-- <div class="row">
-                  <div class="skill-mf">
-
-                    <div id="htmlSkill" class="skill">
-                      <span>HTML</span> <span class="pull-right">8 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="cssSkill" class="skill">
-                      <span>CSS3</span> <span class="pull-right">6 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="pythonSkill" class="skill">
-                      <span>Python</span> <span class="pull-right">5 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="djangoSkill" class="skill">
-                      <span>django</span> <span class="pull-right">2 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="agileSkill" class="skill">
-                      <span>Agile</span> <span class="pull-right">8 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="cicdSkill" class="skill">
-                      <span>CI/CD</span> <span class="pull-right">1 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-
-                    <div id="vmwareSkill" class="skill">
-                      <span>VMware</span> <span class="pull-right">4 yr</span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="8"></div>
-                      </div>
-                    </div>
-                  
-                  </div>
+                <div class="row">
+                  <div id="leftCol" class="col-md-4"></div>
+                  <div id="middleCol" class="col-md-4"></div>
+                  <div id="rightCol" class="col-md-4"></div>
                 </div>
 
               </div>
@@ -659,7 +614,7 @@
           </div>
         </div>
       </div>
-    </section>End Skills Section -->
+    </section>End Skills Section
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="about-mf sect-pt4 route bg-image" style="background-image: url(assets/img/experience-bg.jpg)">
@@ -761,6 +716,14 @@
     </div>
   </footer><!-- End  Footer -->
 
+ 
+  <div id="pythonSkill" class="skill">
+    <span>Python</span> <span class="pull-right">5 yr</span>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="8"></div>
+    </div>
+  </div>
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
@@ -775,34 +738,56 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Load the site data file and the site code --->
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
 
   <script>
 
-    // var categoryBtnIdToSkillsIds = {
-    //   "allCatBtn": null,
-    //   "langCatBtn": ["pythonSkill", "cssSkill", "htmlSkill"],
-    //   "frameworkCatBtn": ["djangoSkill"],
-    //   "softwareCatBtn": ["vmwareSkill"],
-    //   "devCatBtn":  ["agileSkill", "cicdSkill"]
-    // };
-    // var allSkills = document.getElementsByClassName("skill");
-    // var allSkillsIds = [];
-    // for (let skillElement of allSkills) {
-    //   allSkillsIds.push(skillElement.id);
-    // }
-    // categoryBtnIdToSkillsIds["allCatBtn"] = allSkillsIds;
+    hideAllSkills = function() {
+      var allSkills = document.getElementsByClassName("skill");
+      for (let skillElement of allSkills) {
+        skillElement.style.display = 'none';
+      }
+    }
 
-    // displaySkills = function(categoryBtnClickedId) {
+    getSkillsDataByCategory = function(category) {
+      if (category == 'all') {
+        return SKILLS_DATA
+      
+      } else if (category == 'lang') {
+        return SKILLS_DATA.languages
+      
+      } else if (category == 'framework') {
+        return SKILLS_DATA.frameworks
 
-    //   // Hide all skills first
-    //   var allSkills = document.getElementsByClassName("skill");
-    //   for (let skillElement of allSkills) {
-    //     skillElement.style.display = 'none';
-    //   }
+      } else if (category == 'software') {
+        return SKILLS_DATA.software
 
-    //   // then display only those skills that are related to the category button clicked
+      } else if (category == 'dev') {
+        return SKILLS_DATA.development
+      }
+    }
+
+    renderSkillsDataIntoElements = function(skillsData) {
+
+    }
+
+    renderSkillDataToElement = function(skillData) {
+      var newDiv = document.createElement("div"); 
+      newDiv.className = "skill"
+      newDiv.textContent = skillData.skillName
+      document.getElementById("background").appendChild(newDiv);
+    }
+
+    displaySkills = function(categoryBtnClicked) {
+
+      // Hide all skills first
+      hideAllSkills()
+
+      // Get skills data for just the skills that match the category
+      skillsData = getSkillsDataByCategory(categoryBtnClicked)
+
     //   var skillsIds = categoryBtnIdToSkillsIds[categoryBtnClickedId];
 
     //   // skillsIds.foreach(function(skillId) {
@@ -820,11 +805,9 @@
 
     // BEGIN NEW SCRIPT 
 
-    var skillsData = []; 
-    $.getJSON("assets/skills-data.json", function(data) { 
-      skillsData = data; 
-      console.log(skillsData); 
-    }); 
+
+
+    console.log(SKILLS_DATA); 
 
   </script>
 
