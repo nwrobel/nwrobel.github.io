@@ -133,8 +133,8 @@
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
-  padding-top: 1.563rem;
-  padding-bottom: 1.563rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .navbar-b.navbar-reduce {
@@ -151,6 +151,15 @@
   .navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
   }
+}
+
+.nav-item {
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  font-size: 90%;
+  color: #04ffdc;
 }
 
 .navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
@@ -212,12 +221,12 @@
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #141414;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #7700ff;
+  color: #ffdea2;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -235,7 +244,7 @@
   color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .navbar-brand {
+.navbar-b.navbar-reduce {
   color: #0078ff;
 }
 
@@ -243,7 +252,7 @@
   background-color: #682424;
 }
 
-.navbar-b .navbar-brand {
+.navbar-b {
   font-size: 100%;
   font-weight: 400;
 }
@@ -466,7 +475,7 @@ https://www.cssmatic.com/box-shadow
 }
 
 #brandImg {
-  width: 9%;
+  width: 12%;
   height: auto;
 }
 
@@ -518,6 +527,22 @@ https://www.cssmatic.com/box-shadow
 .expPageTechUsed {
   margin-bottom: 3%;
 }
+
+/* ***************** Skills Page ********************* */
+.skill {
+  margin: 1%;
+}
+
+#skillNameLabel {
+  font-size: 90%;
+  font-weight: 600;
+}
+
+#skillExpLabel {
+  font-size: 80%;
+  font-style: italic;
+}
+
 
 /***************** General *******************/
 .data-title {

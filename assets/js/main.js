@@ -1,156 +1,107 @@
 /**
-* Template Name: DevFolio - v2.3.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function($) {
-  "use strict";
+ * Javascript file containing additional code to make the webpage work beyond the functionality
+ * provided by the website template.
+ * 
+ * Author: Nick Wrobel
+ */
 
-  var nav = $('nav');
-  var navHeight = nav.outerHeight();
-
-  $('.navbar-toggler').on('click', function() {
-    if (!$('#mainNav').hasClass('navbar-reduce')) {
-      $('#mainNav').addClass('navbar-reduce');
-    }
-  })
-
-  // Preloader
-  $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
-    }
-  });
-
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
-    return false;
-  });
-
-  /*--/ Star ScrollTop /--*/
-  $('.scrolltop-mf').on("click", function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-  });
-
-  /*--/ Star Counter /--*/
-  $('.counter').counterUp({
-    delay: 15,
-    time: 2000
-  });
-
-  /*--/ Star Scrolling nav /--*/
-  var mainNav_height = $('#mainNav').outerHeight() - 22;
-  $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        var scrollto = target.offset().top - mainNav_height;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Scroll to sections on load with hash links
-  if (window.location.hash) {
-    var initial_nav = window.location.hash;
-    if ($(initial_nav).length) {
-      var scrollto_initial = $(initial_nav).offset().top - mainNav_height;
-      $('html, body').animate({
-        scrollTop: scrollto_initial
-      }, 1000, "easeInOutExpo");
+hideAllSkills = function() {
+    var allSkills = document.getElementsByClassName("skill");
+    for (let skillElement of allSkills) {
+      skillElement.style.display = 'none';
     }
   }
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll').on("click", function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+getSkillsByCategory = function(categoryBtnId) {
+    if (categoryBtnId == 'allSkillsBtn') {
+        var allSkills = []
+        allSkills = allSkills.concat(SKILLS_DATA.languages);
+        allSkills = allSkills.concat(SKILLS_DATA.frameworks);
+        allSkills = allSkills.concat(SKILLS_DATA.software);
+        allSkills = allSkills.concat(SKILLS_DATA.development);
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: navHeight
-  });
-  /*--/ End Scrolling nav /--*/
+        return allSkills;
 
-  /*--/ Navbar Menu Reduce /--*/
-  $(window).trigger('scroll');
-  $(window).on('scroll', function() {
-    var pixels = 50;
-    var top = 1200;
-    if ($(window).scrollTop() > pixels) {
-      $('.navbar-expand-md').addClass('navbar-reduce');
-      $('.navbar-expand-md').removeClass('navbar-trans');
+    } else if (categoryBtnId == 'langSkillsBtn') {
+        return SKILLS_DATA.languages;
+
+    } else if (categoryBtnId == 'frameworkSkillsBtn') {
+        return SKILLS_DATA.frameworks;
+
+    } else if (categoryBtnId == 'softwareSkillsBtn') {
+        return SKILLS_DATA.software;
+
+    } else if (categoryBtnId == 'devSkillsBtn') {
+        return SKILLS_DATA.development;
+
     } else {
-      if (!$('#navbarDefault').hasClass('show')) {
-        $('.navbar-expand-md').removeClass('navbar-reduce');
-      }
-      $('.navbar-expand-md').addClass('navbar-trans');
+        throw "Cannot return skills list: the given category button id is invalid";
     }
-    if ($(window).scrollTop() > top) {
-      $('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+}
+
+function compareSkills(skillA, skillB) {
+  return (skillB.expRating - skillA.expRating);
+}
+
+renderSkillToElement = function(skill, colNumber) {
+    var outerDiv = document.createElement("div"); 
+    outerDiv.className = "skill";
+
+    var skillNameLabel = document.createElement("span");
+    skillNameLabel.textContent = skill.name;
+    skillNameLabel.id = "skillNameLabel";
+
+    var skillYrsLabel =  document.createElement("span");
+    skillYrsLabel.textContent = skill.expYears + ' yr';
+    skillYrsLabel.className = "pull-right";
+    skillYrsLabel.id = "skillExpLabel";
+
+    var progressDiv = document.createElement("div"); 
+    progressDiv.className = "progress";
+
+    var progressBarDiv = document.createElement("div"); 
+    progressBarDiv.className = "progress-bar";
+    progressBarDiv.role = "progressbar";
+
+    percent = (skill.expRating / 10) * 100
+    progressBarDiv.style.width = percent + "%";
+    progressBarDiv.textContent = skill.expRating
+
+    outerDiv.appendChild(skillNameLabel);
+    outerDiv.appendChild(skillYrsLabel);
+    outerDiv.appendChild(progressDiv); 
+    progressDiv.appendChild(progressBarDiv);
+
+    if (colNumber == 0) {
+        colId = "skillsLeftCol"
+    } else if (colNumber == 1) {
+        colId = "skillsMiddleCol"
+    } else if (colNumber == 2) {
+        colId = "skillsRightCol"
     } else {
-      $('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
+        throw "Unable to display skill: Invalid column ID"
     }
-  });
 
-  /*--/ Star Typed /--*/
-  if ($('.text-slider').length == 1) {
-    var typed_strings = $('.text-slider-items').text();
-    var typed = new Typed('.text-slider', {
-      strings: typed_strings.split(','),
-      typeSpeed: 80,
-      loop: true,
-      backDelay: 1100,
-      backSpeed: 30
+
+    document.getElementById(colId).appendChild(outerDiv);
+}
+
+displaySkills = function(categoryBtnClickedId) {
+    // Hide all skills first
+    hideAllSkills();
+
+    // Get skills data for just the skills that match the category
+    var skills = getSkillsByCategory(categoryBtnClickedId);
+
+    skills = skills.sort(compareSkills);
+
+    currentSkillsCol = 0;
+    skills.forEach(function (skill) {
+        renderSkillToElement(skill, currentSkillsCol);
+        currentSkillsCol += 1;
+        currentSkillsCol = currentSkillsCol % 3;
     });
-  }
+}
 
-  /*--/ Testimonials owl /--*/
-  $('#testimonial-mf').owlCarousel({
-    margin: 20,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      }
-    }
-  });
-
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox({
-      'share': false
-    });
-  });
-
-})(jQuery);
+// Show all skills by default when page loads
+displaySkills('allSkillsBtn');
