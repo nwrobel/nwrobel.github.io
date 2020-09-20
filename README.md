@@ -1,4 +1,3 @@
 # nwrobel.github.io
-## UNDER CONSTRUCTION
 
-This is my portfolio website. It is a work in progress.
+This is my professional/portfolio website, hosted on Github. Available at [nwrobel.com](https://nwrobel.com/)
