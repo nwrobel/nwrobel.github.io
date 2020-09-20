@@ -10,343 +10,343 @@ var SKILLS_DATA = {
         { 
             "name": "Bash",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 5
         },
         { 
             "name": "Java",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 4
         },
         { 
             "name": "JavaScript",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 8
         },
         { 
             "name": "HTML",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 8
         },
         { 
             "name": "Python",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 10
         },
         { 
             "name": "C#",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 5
         },
         { 
             "name": "C++",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 3
         },
         { 
             "name": "CSS",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 8
         },
         { 
             "name": "SQL",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 7
         },
         { 
             "name": "Powershell",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 10
         },
         { 
             "name": "AutoHotKey",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 8
         }
     ],
     "frameworks": [
         { 
             "name": "ASP.NET",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 5
         },
         { 
             "name": "Entity Framework",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 5
         },
         { 
             "name": "Django",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 9
         },
         { 
             "name": "Amazon Web Services",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Microsoft Azure",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 8
         },
         { 
             "name": "jQuery",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Backbone.js",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 5
         },
         { 
             "name": "Three.js",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 8
         },
         { 
             "name": "Google Cloud Platform",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 5
         },
         { 
             "name": "Google APIs",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 7
         },
         { 
             "name": "AngularJS",
-            "expYears": "5",
+            "expYears": "1.5",
             "expRating": 6
         },
         { 
             "name": "Bootstrap",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 7
         },
         { 
             "name": "Kendo UI",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 5
         },
         { 
             "name": "Selenium",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 9
         },
         { 
             "name": "Pester",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 9
         },
         { 
             "name": "NUnit",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 4
         }
     ],
     "software": [
         { 
             "name": "MySQL",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Microsoft SQL Server",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 5
         },
         { 
             "name": "Microsoft Exchange Server",
-            "expYears": "5",
+            "expYears": "1.5",
             "expRating": 6
         },
         { 
             "name": "Apache",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Active Directory",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2.5",
+            "expRating": 7
         },
         { 
             "name": "VMWare Workstation",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 9
         },
         { 
             "name": "VMWare ESXi",
-            "expYears": "5",
+            "expYears": "1.5",
             "expRating": 6
         },
         { 
             "name": "Visual Studio",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 9
         },
         { 
             "name": "Visual Studio Team Services (VSTS)",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Eclipse",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 8
         },
         { 
             "name": "Nginx",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "TeamCity",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 4
         },
         { 
             "name": "Windows",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "9",
+            "expRating": 10
         },
         { 
             "name": "Ubuntu Linux",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 8
         },
         { 
             "name": "Red Hat Linux",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 3
         },
         { 
             "name": "Jmeter",
-            "expYears": "5",
+            "expYears": "2",
             "expRating": 8
         },
         { 
             "name": "Ansible",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 3
         },
         { 
             "name": "Git",
-            "expYears": "5",
-            "expRating": 4
+            "expYears": "6",
+            "expRating": 8
         },
         { 
             "name": "Docker",
-            "expYears": "5",
-            "expRating": 2
+            "expYears": "0.5",
+            "expRating": 4
         },
         { 
             "name": "Splunk",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 5
         },
         {
             "name": "Samba",
-            "expYears": "5",
+            "expYears": "3",
             "expRating": 6
         },
         { 
             "name": "IIS",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 5
         },
         { 
             "name": "OpenVPN",
-            "expYears": "5",
-            "expRating": 9
+            "expYears": "1",
+            "expRating": 7
         },
         { 
             "name": "pfSense",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 8
         },
         { 
             "name": "Unity",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "0.5",
+            "expRating": 5
         },
         {
             "name": "RSA Token Security",
             "expYears": "0.5",
-            "expRating": 6
+            "expRating": 5
         }
     ],
     "development":  [
         { 
             "name": "Agile Methodologies",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 9
         },
         { 
             "name": "CI/CD",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "3D Visualization",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 7
         },
         { 
             "name": "Web Development",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 9
         },
         { 
             "name": "REST APIs",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 9
         },
         { 
             "name": "System Administration",
             "expYears": "5",
-            "expRating": 6
+            "expRating": 7
         },
         { 
             "name": "Technical Support",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1",
+            "expRating": 7
         },
         { 
             "name": "UI/UX Design",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "2",
+            "expRating": 7
         },
         { 
             "name": "Automation Engineering",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3.5",
+            "expRating": 8
         },
         { 
             "name": "Database Design",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 5
         },
         { 
             "name": "Server Architecture",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "4",
+            "expRating": 8
         },
         { 
             "name": "Blue/Green Deployment",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 7
         },
         { 
             "name": "Early-stage Startups",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "1.5",
+            "expRating": 5
         },
         { 
             "name": "MVC Pattern",
-            "expYears": "5",
-            "expRating": 6
+            "expYears": "3",
+            "expRating": 7
         }
     ]
 }
