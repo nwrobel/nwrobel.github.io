@@ -19,13 +19,13 @@ var SKILLS_DATA = {
         },
         { 
             "name": "JavaScript",
-            "expYears": "3",
+            "expYears": "4",
             "expRating": 8
         },
         { 
             "name": "HTML",
-            "expYears": "3",
-            "expRating": 8
+            "expYears": "4",
+            "expRating": 9
         },
         { 
             "name": "Python",
@@ -34,8 +34,8 @@ var SKILLS_DATA = {
         },
         { 
             "name": "C#",
-            "expYears": "1",
-            "expRating": 5
+            "expYears": "2",
+            "expRating": 9
         },
         { 
             "name": "C++",
@@ -43,13 +43,13 @@ var SKILLS_DATA = {
             "expRating": 3
         },
         { 
-            "name": "CSS",
-            "expYears": "3",
+            "name": "CSS/SCSS",
+            "expYears": "4",
             "expRating": 8
         },
         { 
             "name": "SQL",
-            "expYears": "2",
+            "expYears": "2.5",
             "expRating": 7
         },
         { 
@@ -61,17 +61,27 @@ var SKILLS_DATA = {
             "name": "AutoHotKey",
             "expYears": "1.5",
             "expRating": 8
+        },
+        { 
+            "name": "PHP",
+            "expYears": "0.5",
+            "expRating": 3
         }
     ],
     "frameworks": [
         { 
             "name": "ASP.NET",
-            "expYears": "2",
-            "expRating": 5
+            "expYears": "3",
+            "expRating": 8
         },
         { 
             "name": "Entity Framework",
-            "expYears": "2",
+            "expYears": "2.5",
+            "expRating": 7
+        },
+        { 
+            "name": "LINQ",
+            "expYears": "0.5",
             "expRating": 5
         },
         { 
@@ -80,13 +90,13 @@ var SKILLS_DATA = {
             "expRating": 9
         },
         { 
-            "name": "Amazon Web Services",
+            "name": "Amazon Web Services (AWS)",
             "expYears": "1.5",
             "expRating": 7
         },
         { 
-            "name": "Microsoft Azure",
-            "expYears": "1.5",
+            "name": "Microsoft Azure DevOps (VSTS)",
+            "expYears": "2.5",
             "expRating": 8
         },
         { 
@@ -100,7 +110,7 @@ var SKILLS_DATA = {
             "expRating": 5
         },
         { 
-            "name": "Three.js",
+            "name": "Three.js (3D Visualization)",
             "expYears": "1",
             "expRating": 8
         },
@@ -121,8 +131,8 @@ var SKILLS_DATA = {
         },
         { 
             "name": "Bootstrap",
-            "expYears": "2",
-            "expRating": 7
+            "expYears": "2.5",
+            "expRating": 8
         },
         { 
             "name": "Kendo UI",
@@ -143,6 +153,16 @@ var SKILLS_DATA = {
             "name": "NUnit",
             "expYears": "0.5",
             "expRating": 4
+        },
+        { 
+            "name": "xUnit",
+            "expYears": "0.5",
+            "expRating": 7
+        },
+        { 
+            "name": "Vue.js",
+            "expYears": "0.5",
+            "expRating": 8
         }
     ],
     "software": [
@@ -157,7 +177,12 @@ var SKILLS_DATA = {
             "expRating": 5
         },
         { 
-            "name": "Microsoft Exchange Server",
+            "name": "SQL Server Management Studio",
+            "expYears": "2",
+            "expRating": 8
+        },
+        { 
+            "name": "Microsoft Exchange",
             "expYears": "1.5",
             "expRating": 6
         },
@@ -187,9 +212,9 @@ var SKILLS_DATA = {
             "expRating": 9
         },
         { 
-            "name": "Visual Studio Team Services (VSTS)",
-            "expYears": "1.5",
-            "expRating": 7
+            "name": "Visual Studio Code",
+            "expYears": "3",
+            "expRating": 10
         },
         { 
             "name": "Eclipse",
@@ -202,12 +227,12 @@ var SKILLS_DATA = {
             "expRating": 7
         },
         { 
-            "name": "TeamCity",
+            "name": "Team City",
             "expYears": "0.5",
             "expRating": 4
         },
         { 
-            "name": "Windows",
+            "name": "Windows (all flavors)",
             "expYears": "9",
             "expRating": 10
         },
@@ -227,12 +252,17 @@ var SKILLS_DATA = {
             "expRating": 8
         },
         { 
+            "name": "Postman",
+            "expYears": "4",
+            "expRating": 9
+        },
+        { 
             "name": "Ansible",
             "expYears": "0.5",
             "expRating": 3
         },
         { 
-            "name": "Git",
+            "name": "Git (bash/cli)",
             "expYears": "6",
             "expRating": 8
         },
@@ -245,6 +275,11 @@ var SKILLS_DATA = {
             "name": "Splunk",
             "expYears": "1.5",
             "expRating": 5
+        },
+        { 
+            "name": "AppDynamics",
+            "expYears": "1",
+            "expRating": 4
         },
         {
             "name": "Samba",
@@ -275,17 +310,32 @@ var SKILLS_DATA = {
             "name": "RSA Token Security",
             "expYears": "0.5",
             "expRating": 5
-        }
+        },
+        { 
+            "name": "Visual Build",
+            "expYears": "0.5",
+            "expRating": 7
+        },
+        { 
+            "name": "Grouplink",
+            "expYears": "0.5",
+            "expRating": 8
+        },
     ],
     "development":  [
         { 
-            "name": "Agile Methodologies",
-            "expYears": "5",
+            "name": "Agile Development Process",
+            "expYears": "6",
+            "expRating": 9
+        },
+        { 
+            "name": "Testing Methodologies",
+            "expYears": "6",
             "expRating": 9
         },
         { 
             "name": "CI/CD",
-            "expYears": "1.5",
+            "expYears": "2.5",
             "expRating": 7
         },
         { 
@@ -294,13 +344,8 @@ var SKILLS_DATA = {
             "expRating": 7
         },
         { 
-            "name": "Web Development",
-            "expYears": "5",
-            "expRating": 9
-        },
-        { 
             "name": "REST APIs",
-            "expYears": "5",
+            "expYears": "6",
             "expRating": 9
         },
         { 
@@ -314,12 +359,22 @@ var SKILLS_DATA = {
             "expRating": 7
         },
         { 
+            "name": "Computing Hardware",
+            "expYears": "8",
+            "expRating": 8
+        },
+        { 
             "name": "UI/UX Design",
-            "expYears": "2",
-            "expRating": 7
+            "expYears": "3",
+            "expRating": 8
         },
         { 
             "name": "Automation Engineering",
+            "expYears": "3.5",
+            "expRating": 8
+        },
+        { 
+            "name": "Windows Domain Administration",
             "expYears": "3.5",
             "expRating": 8
         },
@@ -329,9 +384,9 @@ var SKILLS_DATA = {
             "expRating": 5
         },
         { 
-            "name": "Server Architecture",
+            "name": "Server & Network Architecture",
             "expYears": "4",
-            "expRating": 8
+            "expRating": 7
         },
         { 
             "name": "Blue/Green Deployment",
@@ -345,8 +400,8 @@ var SKILLS_DATA = {
         },
         { 
             "name": "MVC Pattern",
-            "expYears": "3",
-            "expRating": 7
+            "expYears": "3.5",
+            "expRating": 8
         }
     ]
 }
