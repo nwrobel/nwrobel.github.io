@@ -492,23 +492,25 @@ https://www.cssmatic.com/box-shadow
 .eduPageImg {
   width: 50%;
   height: auto;
-  float: right;
-  display: block;
+}
+
+.eduTypeTitle {
+  font-weight: 400;
+  color: #f8c860;
+  font-size: 115%;
+  margin-bottom: 1.5%;
 }
 
 /*********************** Experience page *********************/
+.companyLogo {
+  width: 100%;
+  height: auto;
+}
 
 .expPageJobTitle {
   font-size: 165%;
   font-weight: 500;
   color: #7a5a8a;
-}
-
-.expPageJobDates {
-  font-size: 110%;
-  font-weight: 300;
-  text-align: right;
-  align-self: center;
 }
 
 .expPageJobCompany {
@@ -518,10 +520,19 @@ https://www.cssmatic.com/box-shadow
   color: #f8a960;
 }
 
-.expPageJobLocation {
-  font-size: 110%;
+.expPageJobDates {
+  font-size: 100%;
   font-weight: 300;
   text-align: right;
+  align-self: center;
+  color: #92B4F4;
+}
+
+.expPageJobTypeAndLocation {
+  font-size: 90%;
+  font-weight: 300;
+  text-align: right;
+  color: #5b76a8;
 }
 
 .expPageTechUsed {
