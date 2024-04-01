@@ -170,7 +170,7 @@
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
   color: #ffdea2;
-    text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -673,13 +673,54 @@ https://www.cssmatic.com/box-shadow
   font-style: italic;
 }
 
+/********************** Contact Page **********************/
 
-/***************** General *******************/
 .data-title {
   font-weight: 600;
   color: #f8c860;
   font-size: 105%;
 }
+
+#emailLabel {
+  padding-right: 3%;
+}
+
+#infoCol {
+  width: 70%;
+}
+
+#resumeBtnCol {
+  width: 30%;
+  font-size: 1em;
+  text-align: center;
+}
+
+#resumeDlBtn {
+  padding-left: 5%;
+  padding-right: 5%
+}
+
+@media screen and (max-width:640px) {
+
+  /* style changes when the screen gets smaller */
+  #contactContent {
+    flex-direction: column;
+  }
+
+  #infoCol {
+    width: 100%;
+  }
+
+  #resumeBtnCol {
+    width: 100%;
+    font-size: 1em;
+    padding-top: 4%;
+  }
+}
+
+
+/***************** General *******************/
+
 
 .section-box {
   padding-top: 5%;
@@ -704,6 +745,15 @@ https://www.cssmatic.com/box-shadow
   padding-bottom: 2%;
 }
 
+.section-title-box {
+  margin-bottom: 2%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #0eccc3;
+}
+
 @media screen and (max-width:780px) {
 
   /* style changes when the screen gets smaller */
@@ -716,40 +766,17 @@ https://www.cssmatic.com/box-shadow
   .subsection-title {
     font-size: 0.9em;
   }
+
 }
 
-
-
-
-/* @media screen and (max-width:800px) {
-
-  .box-shadow-full {
-    padding-top: 2%;
-    padding-bottom: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    position: relative;
-    background-color: #1f1f1f;
-    z-index: 2;
-    box-shadow: 10px 10px 11px 0px rgba(188, 204, 203, 1);
+@media screen and (max-width:600px) {
+  .section-title {
+    font-size: 2rem;
   }
-} */
-
-@media (max-width: 768px) {
-  /* .box-shadow-full {
-    box-shadow: 0 0 0 0;
-  } */
 }
 
-.section-title-box {
-  margin-bottom: 2%;
-}
 
-.section-title {
-  font-size: 2.5rem;
-  /* font-weight: bold; */
-  color: #0eccc3;
-}
+
 
 
 body {
