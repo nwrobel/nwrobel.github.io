@@ -505,8 +505,9 @@ https://www.cssmatic.com/box-shadow
 }
 
 @media screen and (max-width:640px) {
-    /* style changes when the screen gets smaller */
-    #aboutPageProfileImgBox {
+
+  /* style changes when the screen gets smaller */
+  #aboutPageProfileImgBox {
     float: none;
   }
 }
@@ -514,7 +515,7 @@ https://www.cssmatic.com/box-shadow
 /*********************** Education page *********************/
 
 .eduPageImageBox {
-  width: 15%; 
+  width: 15%;
   float: left;
 }
 
@@ -523,7 +524,7 @@ https://www.cssmatic.com/box-shadow
 }
 
 .eduPageTextContentBox {
-  width: 85%; 
+  width: 85%;
   float: left
 }
 
@@ -532,7 +533,8 @@ https://www.cssmatic.com/box-shadow
 }
 
 @media screen and (max-width:640px) {
-    /* style changes when the screen gets smaller */
+
+  /* style changes when the screen gets smaller */
   .eduPageTextContentBox {
     font-size: 0.8em;
   }
@@ -562,50 +564,98 @@ https://www.cssmatic.com/box-shadow
 
 /*********************** Experience page *********************/
 .experiencePageImageBox {
-  width: 15%; 
+  width: 15%;
   float: left;
 }
 
 .experienceDetailTextContentBox {
-  width: 85%; 
+  width: 85%;
   float: left
 }
 
-.companyLogo {
-  width: 100%;
-  height: auto;
-}
-
 .expPageJobTitle {
-  font-size: 165%;
+  font-size: 1.6em;
   font-weight: 500;
   color: #7a5a8a;
 }
 
 .expPageJobCompany {
-  font-size: 125%;
+  font-size: 1.25em;
   font-weight: 400;
   font-style: italic;
   color: #f8a960;
 }
 
 .expPageJobDates {
-  font-size: 100%;
+  font-size: 1em;
   font-weight: 300;
-  text-align: right;
-  align-self: center;
   color: #92B4F4;
 }
 
 .expPageJobType {
-  font-size: 90%;
+  font-size: 0.9em;
   font-weight: 300;
-  text-align: right;
   color: #5b76a8;
 }
 
+.expPageTextContentBox {
+  font-size: 1em;
+  padding-top: 2%;
+}
+
+.expPageTextList {
+  list-style-type: square;
+  padding-left: 5%;
+}
+
 .expPageTechUsed {
+  font-size: 0.9em;
   margin-bottom: 3%;
+}
+
+.expPageTechUsedHeading {
+  font-weight: 600;
+  color: #f8c860;
+  font-size: 1em;
+}
+
+@media screen and (max-width:640px) {
+
+  /* style changes when the screen gets smaller */
+  .expPageJobTitle {
+    font-size: 1.4em;
+  }
+
+  .expPageJobCompany {
+    font-size: 1.1em;
+  }
+
+  .expPageJobDates {
+    font-size: 0.8em;
+  }
+
+  .expPageJobType {
+    font-size: 0.8em;
+  }
+
+  .expPageTextContentBox {
+    font-size: 0.9em;
+  }
+
+  .expPageTextList {
+    list-style-type: square;
+    padding-left: 8%;
+  }
+
+  .expPageTechUsedHeading {
+    font-weight: 600;
+    color: #f8c860;
+    font-size: 1em;
+  }
+
+  .expPageTechUsed {
+    font-size: 0.8em;
+  }
 }
 
 /* ***************** Skills Page ********************* */
@@ -646,17 +696,30 @@ https://www.cssmatic.com/box-shadow
   padding-bottom: 4%;
   background-color: #1f1f1f;
   box-shadow: 0px 0px 20px 0px rgb(119 175 172);
-  border-radius: 2%;
+  border-radius: 10px;
+}
+
+.subsection-title {
+  font-size: 1em;
+  padding-bottom: 2%;
 }
 
 @media screen and (max-width:780px) {
-    /* style changes when the screen gets smaller */
-    .section-content-box {
-      width: 86%;
-      margin-left: 7%;
-      margin-right: 7%;
-    }
+
+  /* style changes when the screen gets smaller */
+  .section-content-box {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .subsection-title {
+    font-size: 0.9em;
+  }
 }
+
+
+
 
 /* @media screen and (max-width:800px) {
 
@@ -688,10 +751,6 @@ https://www.cssmatic.com/box-shadow
   color: #0eccc3;
 }
 
-.subsection-title {
-  font-size: 90%;
-  text-align: left;
-}
 
 body {
   background-color: #1f1f1f;
