@@ -532,18 +532,24 @@ https://www.cssmatic.com/box-shadow
   margin-left: 3%;
 }
 
+.eduPageTextList {
+  list-style-type: square;
+  padding-left: 5%;
+}
+
 @media screen and (max-width:640px) {
 
   /* style changes when the screen gets smaller */
   .eduPageTextContentBox {
     font-size: 0.8em;
   }
-}
 
-.eduPageTextList {
-  list-style-type: square;
+  .eduPageTextList {
   padding-left: 8%;
 }
+}
+
+
 
 .eduTypeTitle {
   font-weight: 400;
